@@ -1,7 +1,7 @@
-const API_KEY = "************************";
+const API_KEY = "******************";
 const url_NASA = "https://api.nasa.gov/planetary/apod?api_key=" + API_KEY;
 const url_NASA_DEMO = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY";
-const url_trans = "https://script.google.com/macros/s/************************/exec?text=";
+const url_trans = "https://script.google.com/macros/s/******************/exec?text=";
 
 // 取得ボタン押下時処理
 function LoadDailyPhoto(){
