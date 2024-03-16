@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js" type="text/javascript"></script>
+    <!-- タイトル -->
+    <title>NASA's Photo</title>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div id="wrapper">
+        <!-- ヘッダー -->
+        <header></header>
+        <!-- メイン  -->
+        <main>
+            <div class="container">
+                <!-- ボタン表示エリア -->
+                <div>
+                    <!-- 取得ボタン -->
+                    <div class="load_btn">
+                        <a href="#" onclick="LoadDailyPhoto()" class="gradient">NASA's Daily Photo</a>
+                    </div>
+                    <!-- 検索ボタン（写真） -->
+                    <div class="search_area">
+                        <input type="text" id="search" placeholder="Enter the keyword" class="input_search">
+                        <a href="#" class="bn3637 bn36" onclick="SearchPhoto()">Search Photos</a>
+                    </div>
+                    <!-- 検索ボタン（火星探査車の写真） -->
+                    <!-- <div class="search_area">
+                        <input type="text" id="search_sol" placeholder="Enter a sol attribute" class="input_search">
+                        <a href="#" class="bn3637 bn36" onclick="SearchMarsPhoto()">Search Mars Rover Photos</a>
+                    </div> -->
+                </div>
+                <!-- Daily Photo 表示エリア -->
+                <div class="info_display" id="photo_display">
+                    <div class="inner_info_display">
+                        <!-- 画像表示 -->
+                        <div class="img_display">
+                            <img id="apodImage" width="500px" />
+                        </div>
+                        <!-- コメント表示 -->
+                        <div>
+                            <!-- タイトル -->
+                            <h1 id="apodTitle" class="title_txt"></h1>
+                            <!-- 解説 -->
+                            <p id="apodExplanation" class="explanation_txt"></p>
+                            <!-- 日付 -->
+                            <p id="apodDate"></p>
+                            <!-- コピーライト -->
+                            <p id="apodCopy"></p>
+                            <!-- 翻訳ボタン -->
+                            <div id="jp_btn">
+                                <a href="#" onclick="ClickJapaneseBtn()" class="bn3637 bn37">日本語</a>
+                            </div>
+                            <div id="en_btn">
+                                <a href="#" onclick="ClickEnglishBtn()" class="bn3637 bn37">English</a>
+                            </div>
+                        </div>
+                        <!-- Closeボタン -->
+                        <div>
+                            <a href="#" class="square_btn" onclick="CloseDailyPhoto()"></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 検索結果表示エリア -->
+                <div class="info_display info_display_search" id="search_diaplay">
+                    <!-- Closeボタン -->
+                    <div class="close_search">
+                        <a href="#" class="square_btn" onclick="CloseSearchPhoto()"></a>
+                    </div>
+                    <!-- ライブラリ表示 -->
+                    <div id="library" class="library_display"></div>
+                </div>
+            </div>
+        </main>
+        <!-- フッター -->
+        <footer></footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+    <!-- particles.js -->
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/animation.js"></script>
+</body>
+</html>
